@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>True Christian Victory Ministry | TCVM</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+  :root { --blue:#0a4da6; --red:#d41a2c; --dark:#0a0a0a; }
+  body { background:#f8f9fc; color:#222; line-height:1.6; }
+
+  nav { position:sticky; top:0; z-index:100; background:rgba(10,10,10,0.95); backdrop-filter:blur(10px); display:flex; justify-content:space-between; align-items:center; padding:12px 20px; border-bottom:3px solid var(--red); }
+  nav .brand { color:#fff; font-weight:700; font-size:18px; }
+  nav .brand span { color:var(--red); }
+  nav .brand small { display:block; font-size:10px; color:#8ab4ff; letter-spacing:2px; }
+  nav ul { display:flex; gap:18px; list-style:none; }
+  nav a { color:#fff; text-decoration:none; font-weight:600; font-size:14px; }
+  nav a:hover { color:var(--red); }
+
+  .hero { position:relative; min-height:90vh; background:url('logo-dark.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; }
+  .hero::before { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,77,166,0.85), rgba(212,26,44,0.75)); }
+  .hero-content { position:relative; z-index:2; color:#fff; padding:30px; max-width:800px; }
+  .hero img { width:280px; max-width:80%; margin-bottom:15px; filter:drop-shadow(0 8px 20px rgba(0,0,0,0.6)); }
+  .hero h1 { font-family:'Playfair Display', serif; font-size:42px; margin-bottom:10px; }
+  .hero p { font-size:17px; margin-bottom:20px; }
+  .btn { display:inline-block; padding:12px 26px; border-radius:30px; font-weight:700; text-decoration:none; margin:5px; }
+  .btn-red { background:var(--red); color:#fff; }
+  .btn-blue { background:var(--blue); color:#fff; border:2px solid #fff; }
+
+  section { padding:50px 20px; max-width:1000px; margin:auto; }
+  .section-title { text-align:center; margin-bottom:30px; }
+  .section-title h2 { font-family:'Playfair Display', serif; font-size:32px; color:var(--blue); }
+  .section-title .line { width:80px; height:4px; background:linear-gradient(90deg, var(--red), var(--blue)); margin:8px auto; border-radius:5px; }
+
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:25px; align-items:center; }
+  .about-card { background:#fff; padding:25px; border-radius:15px; box-shadow:0 6px 20px rgba(0,0,0,0.08); border-top:5px solid var(--red); }
+  .about-card h3 { color:var(--blue); margin-bottom:10px; }
+  .leader { text-align:center; background:var(--dark); color:#fff; padding:25px; border-radius:15px; border:2px solid var(--red); }
+  .leader img { width:120px; height:120px; border-radius:50%; object-fit:cover; border:4px solid var(--red); margin-bottom:10px; }
+  .leader h3 { color:#fff; }
+  .leader p { color:#ffd7db; font-style:italic; }
+
+  .services { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .service-card { background:#fff; border-radius:15px; padding:25px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.08); border-bottom:5px solid var(--blue); transition:transform 0.3s; }
+  .service-card:hover { transform:translateY(-5px); }
+  .service-card .icon { font-size:32px; background:linear-gradient(135deg, var(--red), var(--blue)); color:#fff; width:60px; height:60px; line-height:60px; border-radius:50%; margin:0 auto 12px; }
+  .service-card h3 { color:var(--red); }
+  .service-card p { font-weight:600; color:#333; }
+
+  .contact-box { background:var(--dark); color:#fff; border-radius:20px; padding:30px; text-align:center; border:2px solid var(--blue); }
+  .contact-box h2 { color:#fff; }
+  .contact-box a { color:#8ab4ff; text-decoration:none; font-size:18px; font-weight:700; display:block; margin:6px 0; }
+  .contact-box .location { background:#fff; color:#111; padding:12px; border-radius:10px; margin:15px 0; font-weight:600; border-left:6px solid var(--red); }
+
+  footer { background:#000; color:#aaa; text-align:center; padding:20px; font-size:14px; border-top:4px solid var(--red); }
+  footer strong { color:#fff; }
+
+  @media(max-width:700px) {
+    .about-grid, .services { grid-template-columns:1fr; }
+    .hero h1 { font-size:30px; }
+    nav ul { gap:10px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">TCVM <span>MINISTRY</span><small>TRUE CHRISTIAN VICTORY</small></div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <img src="logo-dark.jpg" alt="TCVM Logo">
+    <h1>Welcome to True Christian Victory Ministry</h1>
+    <p>Where Hearts are Restored and Lives Experience Victory in Christ Jesus</p>
+    <a href="#services" class="btn btn-red">Join Our Service</a>
+    <a href="#contact" class="btn btn-blue">Contact Us</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>About Us</h2>
+    <div class="line"></div>
+    <p>We are a Bible believing ministry raising victorious Christians</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>Who We Are</h3>
+      <p>True Christian Victory Ministry (TCVM) is a Christ-centered church located at Sowutuom VRA, behind the First Block Factory. We are committed to preaching the undiluted Word of God, deliverance, healing, and raising men and women for victorious Christian living.</p>
+      <br>
+      <h3>Our Mandate</h3>
+      <p>To win souls, equip believers, and manifest the victory that Christ has given us through love, faith, and power of the Holy Spirit.</p>
+    </div>
+    <div class="leader">
+      <img src="logo-light.jpg" alt="Prophet">
+      <h3>Prophet Samuel Appiah Kumi</h3>
+      <p>Founder & Leader, True Christian Victory Ministry</p>
+      <p style="margin-top:10px; font-style:normal;">"You shall know the truth and the truth shall set you free" - John 8:32</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:#fff; border-radius:20px; margin:20px; max-width:1100px;">
+  <div class="section-title">
+    <h2>Our Service Times</h2>
+    <div class="line"></div>
+    <p>Come and experience the power and presence of God</p>
+  </div>
+  <div class="services">
+    <div class="service-card">
+      <div class="icon">✝</div>
+      <h3>Tuesday Service</h3>
+      <p>9:30 AM - 11:30 AM</p>
+      <small>Word, Prayer & Deliverance</small>
+    </div>
+    <div class="service-card" style="border-bottom-color:var(--red);">
+      <div class="icon">🔥</div>
+      <h3>Friday Service</h3>
+      <p>7:00 PM - 8:30 PM</p>
+      <small>Night of Fire & Worship</small>
+    </div>
+    <div class="service-card">
+      <div class="icon">🙏</div>
+      <h3>Sunday Service</h3>
+      <p>9:00 AM - 11:30 AM</p>
+      <small>Celebration Service</small>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <h2>Contact Us & Location</h2>
+    <div class="line" style="width:80px; height:4px; background:var(--red); margin:10px auto; border-radius:5px;"></div>
+    <div class="location">📍 Located at Sowutuom VRA, behind the First Block Factory, Accra - Ghana</div>
+    <p>Call us for prayers, counseling, and directions:</p>
+    <a href="tel:0245468222">📞 0245468222</a>
+    <a href="tel:0547575142">📞 0547575142</a>
+    <a href="tel:0548573133">📞 0548573133</a>
+    <br>
+    <a href="https://wa.me/233245468222" target="_blank" class="btn btn-red" style="margin-top:10px;">Chat on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <strong>True Christian Victory Ministry (TCVM)</strong><br>
+  Sowutuom VRA, Accra | Prophet Samuel Appiah Kumi<br>
+  © 2026 True Christian Victory Ministry. All Rights Reserved.
+</footer>
+
+</body>
+</html>
